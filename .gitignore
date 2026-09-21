@@ -1,0 +1,20 @@
+# Binaries & Logs
+cloudflared
+*.log
+*.pid
+
+# Data files & Screenshots
+*.xlsx
+*.xls
+screenshot_*.png
+erp_*.png
+
+# Credentials & Sessions
+worker/erp_session.json
+*.env
+*.env.local
+
+# OS & Python
+.DS_Store
+__pycache__/
+*.pyc

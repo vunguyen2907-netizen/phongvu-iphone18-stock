@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <meta name="theme-color" content="#1e293b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <title>Tra Cứu Tồn Kho iPhone 18 & Tạo Lệnh CKNB | Phong Vũ ERP</title>
+  <meta name="description" content="Hệ thống tra cứu nhanh và chính xác tồn kho iPhone 18, ốp lưng, quà tặng tại Kho 11001.01 Phong Vũ và tạo phiếu Chuyển Kho Nội Bộ (CKNB) tự động.">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- App Wrapper -->
+  <div class="app-container">
+
+    <!-- Sticky Mobile Header -->
+    <header class="app-header">
+      <div class="header-top">
+        <div class="brand-badge">
+          <div class="brand-logo-icon">PV</div>
+          <div class="brand-title">
+            Tồn Kho iPhone 18
+            <span class="badge-version">VŨ AM</span>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button class="icon-btn" id="syncBtn" title="Đồng bộ từ ERP & Sheets" aria-label="Đồng bộ">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+          </button>
+          <button class="icon-btn" id="themeToggleBtn" title="Chuyển chế độ sáng/tối" aria-label="Chuyển chế độ">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Warehouse & Realtime Status Bar -->
+      <div class="warehouse-status-bar">
+        <div class="warehouse-tag">
+          <span class="pulse-dot"></span>
+          <span>Kho xuất: <b>11001.01 (CP01)</b></span>
+        </div>
+        <div id="syncTimeLabel" style="font-size: 11px; font-weight: 500;">Cập nhật: Đang tải...</div>
+      </div>
+
+      <!-- Search Box with Instant Response -->
+      <div class="search-wrapper">
+        <div class="search-input-group">
+          <div class="search-icon">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+          </div>
+          <input 
+            type="search" 
+            id="searchInput" 
+            class="search-input" 
+            placeholder="Tìm theo SKU, tên SP, dung lượng, màu sắc..." 
+            autocomplete="off"
+            spellcheck="false"
+            aria-label="Tìm kiếm sản phẩm"
+          />
+          <button type="button" class="clear-search-btn" id="clearSearchBtn" aria-label="Xoá tìm kiếm">
+            <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Category Filter Chips -->
+      <div class="filter-tabs" role="tablist">
+        <button class="filter-chip active" data-category="all" role="tab">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+          Tất cả
+        </button>
+        <button class="filter-chip" data-category="iphone" role="tab">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+          iPhone 18 Series
+        </button>
+        <button class="filter-chip" data-category="case" role="tab">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          Ốp Lưng & Kính
+        </button>
+        <button class="filter-chip" data-category="gift" role="tab">
+          <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V6a2 2 0 10-2 2h2zm0 0H4a2 2 0 00-2 2v10a2 2 0 002 2h16a2 2 0 002-2V10a2 2 0 00-2-2h-8z"></path></svg>
+          Quà Tặng
+        </button>
+      </div>
+    </header>
+
+    <!-- Sub Filters (Dung lượng & Màu sắc) -->
+    <div class="sub-filters-container">
+      <select id="capacityFilter" class="filter-select" aria-label="Lọc theo dung lượng">
+        <option value="all">Dung lượng: Tất cả</option>
+      </select>
+      <select id="colorFilter" class="filter-select" aria-label="Lọc theo màu sắc">
+        <option value="all">Màu sắc: Tất cả</option>
+      </select>
+    </div>
+
+    <!-- Main Results Section -->
+    <main class="content-area">
+      <!-- Rule Explanation Card -->
+      <div class="rule-explainer-card">
+        <div class="rule-card-header" onclick="toggleRuleExplanation()">
+          <div class="rule-card-title">
+            <span class="rule-badge" style="background: #16a34a;">RULE BÁN HÀNG</span>
+            <span>Tồn Khả Dụng = Tồn ERP + Đơn Giữ Nhả Bán</span>
+          </div>
+          <div style="display: flex; align-items: center; gap: 6px;">
+            <span class="rule-toggle-text" id="ruleToggleText">Chi tiết</span>
+            <svg id="ruleToggleIcon" width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24" style="transition: transform 0.2s;"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+          </div>
+        </div>
+        <div class="rule-card-content" id="ruleCardContent" style="display: block;">
+          <div style="background: #f0fdf4; border: 1px solid #bbf7d0; padding: 8px 10px; border-radius: 6px; font-size: 13px; color: #166534; font-weight: 600; line-height: 1.4;">
+            💡 <b>Quy ước nghiệp vụ:</b> Toàn bộ đơn giữ hàng trong danh sách đặt cọc được quy ước là <u>auto khách không lấy</u> ➔ Có thể xin Admin nhả tồn để xuất bán cho khách mới ngay lập tức!
+          </div>
+          <div class="rule-step">
+            <div class="rule-step-icon" style="background: #ecfdf5; color: #059669; border-color: #a7f3d0;">=</div>
+            <div class="rule-step-body">
+              <b>Công thức tính:</b> <code style="background: var(--color-muted); padding: 2px 6px; border-radius: 4px; font-weight: 700; color: #059669;">Tồn Khả Dụng Bán = Tồn ERP + SL Đơn Giữ Nhả Bán</code>
+            </div>
+          </div>
+          <div class="rule-step">
+            <div class="rule-step-icon">📋</div>
+            <div class="rule-step-body">
+              <b>Điều kiện đơn giữ được nhả bán:</b> Nằm trong Sheet <b>Data đặt cọc</b> và Cột <b>"Xuất tại đâu?"</b> = <b>"Nhận sau ở SR bán"</b> hoặc <b>blank (trống)</b>.
+            </div>
+          </div>
+          <div class="rule-step">
+            <div class="rule-step-icon" style="background: #eff6ff; color: #2563eb; border-color: #bfdbfe;">⚡</div>
+            <div class="rule-step-body">
+              <b>Thao tác bán hàng:</b> Bấm vào số <b>"+ Đơn Giữ Nhả Bán"</b> trên từng sản phẩm để copy mã SO ➔ Gửi Admin xin duyệt nhả tồn xuất máy ngay cho khách!
+            </div>
+          </div>
+          <div style="margin-top: 6px; display: flex; gap: 8px;">
+            <button class="btn btn-primary" style="flex: 1; padding: 8px 12px; font-size: 13px; font-weight: 600;" onclick="openGlobalSOChecker()">
+              🔍 Đối Chiếu & Tra Cứu Mã Đơn Giữ ERP
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="results-summary">
+        <span>Kết quả tồn kho:</span>
+        <span class="results-count" id="resultsCount">Đang tải...</span>
+      </div>
+
+      <!-- Product Cards Container -->
+      <div id="productGrid">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </main>
+
+    <!-- Bottom Action & Tab Bar (Native App Style) -->
+    <nav class="bottom-bar">
+      <button class="tab-nav-btn active" id="tabNavHome" onclick="switchBottomTab('home')">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+        <span>Tra Cứu</span>
+      </button>
+      <button class="tab-nav-btn" id="tabNavVerify" onclick="openGlobalSOChecker()">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+        <span>Check Đơn ERP</span>
+      </button>
+      <button class="tab-nav-btn" onclick="window.open('https://erp.phongvu.vn/products/inventory-tracking', '_blank')">
+        <svg width="20" height="20" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        <span>ERP Gốc</span>
+      </button>
+    </nav>
+
+    <!-- MODAL 1: HELD ORDERS INSPECTION SHEET -->
+    <div class="modal-overlay" id="heldSheet">
+      <div class="sheet-modal">
+        <div class="sheet-handle"></div>
+        <div class="sheet-header">
+          <div class="sheet-title" id="heldSheetTitle">Chi tiết tồn đang giữ</div>
+          <button class="icon-btn" id="closeHeldSheetBtn" aria-label="Đóng">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+        <div class="sheet-body" id="heldSheetBody">
+          <!-- Populated by openHeldOrdersModal() -->
+        </div>
+      </div>
+    </div>
+
+    <!-- MODAL 2: REQUEST STOCK TRANSFER (CKNB) SHEET -->
+    <div class="modal-overlay" id="requestSheet">
+      <div class="sheet-modal">
+        <div class="sheet-handle"></div>
+        <div class="sheet-header">
+          <div class="sheet-title" id="requestSheetTitle">Yêu Cầu Chuyển Kho Nội Bộ (CKNB)</div>
+          <button class="icon-btn" id="closeRequestSheetBtn" aria-label="Đóng">
+            <svg width="18" height="18" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+          </button>
+        </div>
+
+        <div class="sheet-body">
+          <!-- ERP Fixed Parameters Preview -->
+          <div style="background: var(--color-muted); border: 1px solid var(--color-border); border-radius: var(--radius-sm); padding: 10px 12px; margin-bottom: 14px; font-size: 12px; line-height: 1.6;">
+            <div>🏭 <b>Kho xuất:</b> CP01 (Kho 11001.01)</div>
+            <div>📦 <b>Loại hàng:</b> Hàng bảo hành</div>
+            <div>📅 <b>Ngày dự kiến:</b> Hôm nay</div>
+            <div>📝 <b>Ghi chú:</b> Hệ thống auto xin hàng Iphone 18 của VŨ AM</div>
+          </div>
+
+          <!-- Target Showroom Input -->
+          <div class="form-group">
+            <label class="form-label">Kho nhận (Chi nhánh của bạn) *</label>
+            <input 
+              type="text" 
+              id="targetShowroomInput" 
+              class="form-control" 
+              placeholder="Nhập mã CP (Ví dụ: CP07)" 
+              value="CP07"
+            />
+            <div class="form-hint">Chọn nhanh chi nhánh showroom:</div>
+            <div class="showroom-chips" id="showroomChips">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Product Items List -->
+          <div class="form-group">
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <label class="form-label" style="margin-bottom: 0;">Sản phẩm & Số lượng xin *</label>
+              <button type="button" id="addItemBtn" style="font-size: 12px; font-weight: 700; color: var(--color-info); background: none; border: none; cursor: pointer; display: flex; align-items: center; gap: 4px;">
+                <svg width="14" height="14" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path></svg>
+                Thêm sản phẩm
+              </button>
+            </div>
+            <div id="requestItemsContainer">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+        <div class="sheet-footer">
+          <button class="btn-request" id="submitRequestBtn" style="width: 100%;">
+            <svg width="16" height="16" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+            Gửi Admin Duyệt & Tự Động Tạo Lệnh ERP
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
