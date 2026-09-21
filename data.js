@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 19:04:48
+ * Cập nhật lúc: 21/09/2026 19:37:21
  */
 const INITIAL_PRODUCTS = [
   {
@@ -239,18 +239,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Chờ xử lý] XL-A-01-a (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "XL-A-01-a",
-          "bin_name": "[Chờ xử lý] XL-A-01-a",
-          "zone_name": "Chờ xử lý",
-          "product_status": "Hàng chờ xử lý",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 0,
       "erp_available_qty": -3,
       "held_qty": 3,
@@ -1041,26 +1032,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Luân chuyển] LC-A-01-a (2), [Lưu kho hàng bán mới] LK.01-A-01-a (2)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LC-A-01-a",
-          "bin_name": "[Luân chuyển] LC-A-01-a",
-          "zone_name": "Luân chuyển",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 2,
-          "uom": "Cái"
-        },
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 2,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 4,
       "erp_available_qty": 0,
       "held_qty": 4,
@@ -1461,18 +1435,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (2)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 2,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 2,
       "erp_available_qty": -1,
       "held_qty": 3,
@@ -1900,18 +1865,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 1,
       "erp_available_qty": 1,
       "held_qty": 0,
@@ -2008,18 +1964,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (3)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 3,
       "erp_available_qty": 2,
       "held_qty": 1,
@@ -2123,34 +2070,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3), [Bàn giao] BG-A-01-a (1), [Chờ xử lý] XL-A-01-a (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VK6.01-01-d",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VK6.01-01-d",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
-          "uom": "Cái"
-        },
-        {
-          "bin_code": "BG-A-01-a",
-          "bin_name": "[Bàn giao] BG-A-01-a",
-          "zone_name": "Bàn giao",
-          "product_status": "Đang vận hành trong kho",
-          "qty": 1,
-          "uom": "Cái"
-        },
-        {
-          "bin_code": "XL-A-01-a",
-          "bin_name": "[Chờ xử lý] XL-A-01-a",
-          "zone_name": "Chờ xử lý",
-          "product_status": "Hàng chờ xử lý",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 3,
       "erp_available_qty": 3,
       "held_qty": 0,
@@ -2588,18 +2510,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VK6.01-01-d",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VK6.01-01-d",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 3,
       "erp_available_qty": 3,
       "held_qty": 0,
@@ -2740,18 +2653,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 1,
       "erp_available_qty": 1,
       "held_qty": 0,
@@ -2836,18 +2740,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VHH.01-03-b",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 1,
       "erp_available_qty": 1,
       "held_qty": 0,
@@ -2971,18 +2866,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (4)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VHH.01-03-b",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 4,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 4,
       "erp_available_qty": 2,
       "held_qty": 2,
@@ -3056,18 +2942,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (1)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VHH.01-03-b",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 1,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 1,
       "erp_available_qty": 1,
       "held_qty": 0,
@@ -4101,26 +3978,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (6), [Luân chuyển] LC-A-01-a (55)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VHH.01-03-b",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 6,
-          "uom": "Cái"
-        },
-        {
-          "bin_code": "LC-A-01-a",
-          "bin_name": "[Luân chuyển] LC-A-01-a",
-          "zone_name": "Luân chuyển",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 55,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 61,
       "erp_available_qty": 20,
       "held_qty": 41,
@@ -4917,18 +4777,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (3)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "04-VHH.01-03-b",
-          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
-          "zone_name": "Trưng bày hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 3,
       "erp_available_qty": 1,
       "held_qty": 2,
@@ -5448,18 +5299,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (7)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 7,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 7,
       "erp_available_qty": 7,
       "held_qty": 0,
@@ -5592,18 +5434,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Hàng MKT] MK-A-01-a (5)",
-      "bin_name": "Kho bán CP01 (11001.01)",
-      "bin_details": [
-        {
-          "bin_code": "MK-A-01-a",
-          "bin_name": "[Hàng MKT] MK-A-01-a",
-          "zone_name": "Hàng MKT",
-          "product_status": "Hàng khác",
-          "qty": 5,
-          "uom": "Cái"
-        }
-      ],
+      "bin_code": "11001.01 (Chưa có hàng trong bin)",
+      "bin_name": "Khu vực kho bán CP01",
+      "bin_details": [],
       "on_hand_qty": 0,
       "erp_available_qty": 0,
       "held_qty": 0,
