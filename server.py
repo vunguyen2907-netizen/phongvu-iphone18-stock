@@ -144,12 +144,56 @@ const ALL_DEPOSITS_LOOKUP = {json.dumps(ALL_DEPOSITS_DICT, ensure_ascii=False, i
     return CACHED_DATA
 
 
+def push_to_github():
+    try:
+        import subprocess
+        subprocess.run(["git", "add", "data.js"], cwd=PROJECT_DIR, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["git", "commit", "-m", "Auto sync ERP to GitHub Pages"], cwd=PROJECT_DIR, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        subprocess.run(["git", "push", "origin", "main"], cwd=PROJECT_DIR, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        print(f"✓ [GITHUB] Đã đồng bộ số liệu mới lên GitHub Pages lúc {datetime.now().strftime('%H:%M:%S')}")
+    except Exception as e:
+        print(f"! [GITHUB] Lỗi đồng bộ GitHub Pages: {e}")
+
+
+def check_and_restart_tunnel_if_needed():
+    """Tự động phát hiện và khôi phục khi Cloudflare Quick Tunnel bị ngắt kết nối"""
+    tunnel_log_file = os.path.join(PROJECT_DIR, "tunnel.log")
+    if not os.path.exists(tunnel_log_file):
+        return
+    try:
+        with open(tunnel_log_file, "r") as f:
+            lines = f.readlines()[-30:]
+        content = "".join(lines)
+        if "Tunnel not found" in content or "Unauthorized" in content:
+            print("! [WATCHDOG] Phát hiện Cloudflare Tunnel bị chết (Tunnel not found). Đang tự động cấp link mới...")
+            import subprocess
+            subprocess.run(["pkill", "-f", "cloudflared tunnel"], check=False)
+            time.sleep(1)
+            cf_bin = os.path.join(PROJECT_DIR, "cloudflared")
+            cmd = f"nohup {cf_bin} tunnel --url http://localhost:{PORT} > {tunnel_log_file} 2>&1 &"
+            os.system(cmd)
+            time.sleep(3)
+            print("✓ [WATCHDOG] Đã khởi động lại Cloudflare Tunnel thành công.")
+    except Exception as e:
+        print(f"! [WATCHDOG] Lỗi kiểm tra tunnel: {e}")
+
+
 def background_sync_worker():
-    """Tự động đồng bộ ngầm định kỳ mỗi 60 giây"""
+    """Tự động đồng bộ ngầm định kỳ mỗi 60 giây, kiểm tra tunnel và đẩy lên GitHub Pages"""
+    counter = 0
     while True:
-        time.sleep(60)
+        time.sleep(30)
         try:
-            perform_erp_live_sync(force=True)
+            # Kiểm tra trạng thái kết nối của Cloudflare tunnel
+            check_and_restart_tunnel_if_needed()
+
+            counter += 1
+            if counter % 2 == 0:  # Mỗi 60 giây sync ERP
+                perform_erp_live_sync(force=True)
+
+            if counter >= 10:  # Mỗi 5 phút đẩy GitHub Pages
+                counter = 0
+                threading.Thread(target=push_to_github, daemon=True).start()
         except Exception as e:
             print(f"! [WORKER] Lỗi worker ngầm: {e}")
 
