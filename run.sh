@@ -12,8 +12,9 @@ echo "=================================================================="
 
 # 1. Khởi động Web Server cục bộ (Port 3108)
 if ! lsof -i :3108 > /dev/null; then
-    echo "➜ Đang chạy Web Server trên port 3108..."
-    python3 -m http.server 3108 --directory "$DIR" > /dev/null 2>&1 &
+    echo "➜ Đang chạy Realtime ERP Server trên port 3108..."
+    python3 "$DIR/server.py" > "$DIR/server.log" 2>&1 &
+    sleep 2
 fi
 
 # 2. Khởi động Cloudflare Tunnel tạo link Public
