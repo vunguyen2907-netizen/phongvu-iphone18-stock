@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 19:58:20
+ * Cập nhật lúc: 21/09/2026 20:24:52
  */
 const INITIAL_PRODUCTS = [
   {
@@ -169,14 +169,13 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 3,
-      "total_erp_holds": 3,
-      "valid_releasable_count": 3,
+      "total_held_deposits": 2,
+      "total_erp_holds": 2,
+      "valid_releasable_count": 2,
       "excluded_sr264_count": 0,
       "cp01_deposits_count": 0,
       "sr_distribution": {
-        "CP58": 2,
-        "CP02": 1
+        "CP58": 2
       },
       "orders_list": [
         {
@@ -195,24 +194,6 @@ const INITIAL_PRODUCTS = [
           "is_valid_pickup": true,
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091237172540",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091236859420-01",
-          "clean_so": "26091236859420",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN MINH HÙNG",
-          "staff_id": "6261",
-          "saleman_display": "NGUYỄN MINH HÙNG (Mã NV: 6261)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091236859420",
           "status": "CAN_SELL"
         },
         {
@@ -252,12 +233,12 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 0,
-      "erp_available_qty": -3,
-      "held_qty": 3,
-      "total_erp_holds": 3,
+      "erp_available_qty": -2,
+      "held_qty": 2,
+      "total_erp_holds": 2,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 3,
-      "available_qty": 3,
+      "total_deposit_orders": 2,
+      "available_qty": 2,
       "held_orders": [
         {
           "order_code": "26091237172540-01",
@@ -275,24 +256,6 @@ const INITIAL_PRODUCTS = [
           "is_valid_pickup": true,
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091237172540",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091236859420-01",
-          "clean_so": "26091236859420",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN MINH HÙNG",
-          "staff_id": "6261",
-          "saleman_display": "NGUYỄN MINH HÙNG (Mã NV: 6261)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091236859420",
           "status": "CAN_SELL"
         },
         {
@@ -330,15 +293,14 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 6,
-      "total_erp_holds": 6,
-      "valid_releasable_count": 6,
+      "total_held_deposits": 5,
+      "total_erp_holds": 5,
+      "valid_releasable_count": 5,
       "excluded_sr264_count": 0,
       "cp01_deposits_count": 0,
       "sr_distribution": {
         "CP58": 3,
-        "CP74": 2,
-        "CP02": 1
+        "CP74": 2
       },
       "orders_list": [
         {
@@ -430,24 +392,6 @@ const INITIAL_PRODUCTS = [
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091236240170",
           "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091234373940-01",
-          "clean_so": "26091234373940",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN THỊ THANH TUYỀN",
-          "staff_id": "6361",
-          "saleman_display": "NGUYỄN THỊ THANH TUYỀN (Mã NV: 6361)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091234373940",
-          "status": "CAN_SELL"
         }
       ]
     },
@@ -476,12 +420,12 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 8,
-      "erp_available_qty": 2,
-      "held_qty": 6,
-      "total_erp_holds": 6,
+      "erp_available_qty": 3,
+      "held_qty": 5,
+      "total_erp_holds": 5,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 6,
-      "available_qty": 14,
+      "total_deposit_orders": 5,
+      "available_qty": 13,
       "held_orders": [
         {
           "order_code": "26091238278660-01",
@@ -571,24 +515,6 @@ const INITIAL_PRODUCTS = [
           "is_valid_pickup": true,
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091236240170",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091234373940-01",
-          "clean_so": "26091234373940",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN THỊ THANH TUYỀN",
-          "staff_id": "6361",
-          "saleman_display": "NGUYỄN THỊ THANH TUYỀN (Mã NV: 6361)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091234373940",
           "status": "CAN_SELL"
         }
       ]
@@ -704,37 +630,17 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 2,
-      "total_erp_holds": 3,
-      "valid_releasable_count": 2,
-      "excluded_sr264_count": 1,
+      "total_held_deposits": 1,
+      "total_erp_holds": 1,
+      "valid_releasable_count": 1,
+      "excluded_sr264_count": 0,
       "cp01_deposits_count": 1,
       "sr_distribution": {
-        "CP02": 1,
-        "CP01": 1,
-        "CP64": 1
+        "CP01": 1
       },
       "orders_list": [
         {
-          "order_code": "26091439647770-01",
-          "clean_so": "26091439647770",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "14/09/2026",
-          "salesman": "NGUYỄN MINH HÙNG",
-          "staff_id": "6261",
-          "saleman_display": "NGUYỄN MINH HÙNG (Mã NV: 6261)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
-          "trang_thai": "Đã tiếp nhận",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091439647770",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091436051540-02",
+          "order_code": "26091436051540",
           "clean_so": "26091436051540",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
@@ -750,24 +656,6 @@ const INITIAL_PRODUCTS = [
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091436051540",
           "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091232603700-01",
-          "clean_so": "26091232603700",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "LÊ VĂN TÁNH",
-          "staff_id": "7770",
-          "saleman_display": "LÊ VĂN TÁNH (Mã NV: 7770)",
-          "sr_ban": "CP64",
-          "sr_ban_name": "CP64 - Nguyễn Ảnh Thủ (Quận 12)",
-          "xuat_tai_dau": "SR 264",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": false,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091232603700",
-          "status": "EXCLUDED_SR264"
         }
       ]
     },
@@ -788,33 +676,15 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 2,
-      "erp_available_qty": -1,
-      "held_qty": 2,
-      "total_erp_holds": 3,
-      "excluded_sr264_count": 1,
-      "total_deposit_orders": 2,
-      "available_qty": 4,
+      "erp_available_qty": 1,
+      "held_qty": 1,
+      "total_erp_holds": 1,
+      "excluded_sr264_count": 0,
+      "total_deposit_orders": 1,
+      "available_qty": 3,
       "held_orders": [
         {
-          "order_code": "26091439647770-01",
-          "clean_so": "26091439647770",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "14/09/2026",
-          "salesman": "NGUYỄN MINH HÙNG",
-          "staff_id": "6261",
-          "saleman_display": "NGUYỄN MINH HÙNG (Mã NV: 6261)",
-          "sr_ban": "CP02",
-          "sr_ban_name": "CP02 - Hoàng Hoa Thám (Tân Bình)",
-          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
-          "trang_thai": "Đã tiếp nhận",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091439647770",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091436051540-02",
+          "order_code": "26091436051540",
           "clean_so": "26091436051540",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
@@ -830,24 +700,6 @@ const INITIAL_PRODUCTS = [
           "qty": 1,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26091436051540",
           "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091232603700-01",
-          "clean_so": "26091232603700",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "LÊ VĂN TÁNH",
-          "staff_id": "7770",
-          "saleman_display": "LÊ VĂN TÁNH (Mã NV: 7770)",
-          "sr_ban": "CP64",
-          "sr_ban_name": "CP64 - Nguyễn Ảnh Thủ (Quận 12)",
-          "xuat_tai_dau": "SR 264",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": false,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091232603700",
-          "status": "EXCLUDED_SR264"
         }
       ]
     }
