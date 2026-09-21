@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 20:24:52
+ * Cập nhật lúc: 21/09/2026 20:30:05
  */
 const INITIAL_PRODUCTS = [
   {
@@ -640,8 +640,8 @@ const INITIAL_PRODUCTS = [
       },
       "orders_list": [
         {
-          "order_code": "26091436051540",
-          "clean_so": "26091436051540",
+          "order_code": "26092132285440",
+          "clean_so": "26092132285440",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
           "salesman": "Kinh doanh Phong Vũ",
@@ -654,7 +654,7 @@ const INITIAL_PRODUCTS = [
           "is_cp01": true,
           "is_valid_pickup": true,
           "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091436051540",
+          "erp_link": "https://erp.phongvu.vn/sales/orders/26092132285440",
           "status": "CAN_SELL"
         }
       ]
@@ -684,8 +684,8 @@ const INITIAL_PRODUCTS = [
       "available_qty": 3,
       "held_orders": [
         {
-          "order_code": "26091436051540",
-          "clean_so": "26091436051540",
+          "order_code": "26092132285440",
+          "clean_so": "26092132285440",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
           "salesman": "Kinh doanh Phong Vũ",
@@ -698,7 +698,7 @@ const INITIAL_PRODUCTS = [
           "is_cp01": true,
           "is_valid_pickup": true,
           "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091436051540",
+          "erp_link": "https://erp.phongvu.vn/sales/orders/26092132285440",
           "status": "CAN_SELL"
         }
       ]
