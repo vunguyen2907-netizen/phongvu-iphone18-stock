@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 17:14:15
+ * Cập nhật lúc: 21/09/2026 17:19:28
  */
 const INITIAL_PRODUCTS = [
   {
@@ -239,25 +239,25 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (1)",
+      "bin_code": "[Chờ xử lý] XL-A-01-a (1)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
+          "bin_code": "XL-A-01-a",
+          "bin_name": "[Chờ xử lý] XL-A-01-a",
+          "zone_name": "Chờ xử lý",
+          "product_status": "Hàng chờ xử lý",
           "qty": 1,
           "uom": "Cái"
         }
       ],
-      "on_hand_qty": 1,
-      "erp_available_qty": -2,
+      "on_hand_qty": 0,
+      "erp_available_qty": -3,
       "held_qty": 3,
       "total_erp_holds": 3,
       "excluded_sr264_count": 0,
       "total_deposit_orders": 3,
-      "available_qty": 4,
+      "available_qty": 3,
       "held_orders": [
         {
           "order_code": "26091237172540-01",
@@ -2196,7 +2196,7 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3), [Bàn giao] BG-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (1)",
+      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3), [Bàn giao] BG-A-01-a (1), [Chờ xử lý] XL-A-01-a (1)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
@@ -2216,21 +2216,21 @@ const INITIAL_PRODUCTS = [
           "uom": "Cái"
         },
         {
-          "bin_code": "LK.01-A-01-a",
-          "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
-          "zone_name": "Lưu kho hàng bán mới",
-          "product_status": "Hàng bán mới tại kho",
+          "bin_code": "XL-A-01-a",
+          "bin_name": "[Chờ xử lý] XL-A-01-a",
+          "zone_name": "Chờ xử lý",
+          "product_status": "Hàng chờ xử lý",
           "qty": 1,
           "uom": "Cái"
         }
       ],
-      "on_hand_qty": 4,
-      "erp_available_qty": 4,
+      "on_hand_qty": 3,
+      "erp_available_qty": 3,
       "held_qty": 0,
       "total_erp_holds": 0,
       "excluded_sr264_count": 0,
       "total_deposit_orders": 0,
-      "available_qty": 4,
+      "available_qty": 3,
       "held_orders": []
     }
   },
