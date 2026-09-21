@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 20:30:05
+ * Cập nhật lúc: 21/09/2026 20:35:24
  */
 const INITIAL_PRODUCTS = [
   {
@@ -640,7 +640,7 @@ const INITIAL_PRODUCTS = [
       },
       "orders_list": [
         {
-          "order_code": "26092132285440",
+          "order_code": "26092132285440-01",
           "clean_so": "26092132285440",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
@@ -684,7 +684,7 @@ const INITIAL_PRODUCTS = [
       "available_qty": 3,
       "held_orders": [
         {
-          "order_code": "26092132285440",
+          "order_code": "26092132285440-01",
           "clean_so": "26092132285440",
           "doc_type": "Đơn hàng",
           "deposit_date": "12/09/2026",
