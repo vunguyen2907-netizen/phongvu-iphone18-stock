@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 21/09/2026 16:53:13
+ * Cập nhật lúc: 21/09/2026 16:58:27
  */
 const INITIAL_PRODUCTS = [
   {
@@ -169,35 +169,16 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 4,
-      "total_erp_holds": 4,
-      "valid_releasable_count": 4,
+      "total_held_deposits": 3,
+      "total_erp_holds": 3,
+      "valid_releasable_count": 3,
       "excluded_sr264_count": 0,
-      "cp01_deposits_count": 1,
+      "cp01_deposits_count": 0,
       "sr_distribution": {
-        "CP01": 1,
         "CP58": 2,
         "CP02": 1
       },
       "orders_list": [
-        {
-          "order_code": "26091237235360-01",
-          "clean_so": "26091237235360",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN TRỌNG HÒA",
-          "staff_id": "1513",
-          "saleman_display": "NGUYỄN TRỌNG HÒA (Mã NV: 1513)",
-          "sr_ban": "CP01",
-          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": true,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091237235360",
-          "status": "CAN_SELL"
-        },
         {
           "order_code": "26091237172540-01",
           "clean_so": "26091237172540",
@@ -271,31 +252,13 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 1,
-      "erp_available_qty": -3,
-      "held_qty": 4,
-      "total_erp_holds": 4,
+      "erp_available_qty": -2,
+      "held_qty": 3,
+      "total_erp_holds": 3,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 4,
-      "available_qty": 5,
+      "total_deposit_orders": 3,
+      "available_qty": 4,
       "held_orders": [
-        {
-          "order_code": "26091237235360-01",
-          "clean_so": "26091237235360",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "NGUYỄN TRỌNG HÒA",
-          "staff_id": "1513",
-          "saleman_display": "NGUYỄN TRỌNG HÒA (Mã NV: 1513)",
-          "sr_ban": "CP01",
-          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": true,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091237235360",
-          "status": "CAN_SELL"
-        },
         {
           "order_code": "26091237172540-01",
           "clean_so": "26091237172540",
