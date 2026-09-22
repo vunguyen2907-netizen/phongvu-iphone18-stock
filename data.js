@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 12:43:45
+ * Cập nhật lúc: 22/09/2026 12:49:06
  */
 const INITIAL_PRODUCTS = [
   {
@@ -399,23 +399,15 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Luân chuyển] LC-A-01-a (3), [Lưu kho hàng bán mới] LK.01-A-01-a (5)",
+      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (8)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
-        {
-          "bin_code": "LC-A-01-a",
-          "bin_name": "[Luân chuyển] LC-A-01-a",
-          "zone_name": "Luân chuyển",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
-          "uom": "Cái"
-        },
         {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
           "zone_name": "Lưu kho hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
-          "qty": 5,
+          "qty": 8,
           "uom": "Cái"
         }
       ],
