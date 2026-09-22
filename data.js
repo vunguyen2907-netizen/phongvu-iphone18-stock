@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 14:29:31
+ * Cập nhật lúc: 22/09/2026 14:34:48
  */
 const INITIAL_PRODUCTS = [
   {
@@ -538,9 +538,18 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "11001.01 (Chưa có hàng trong bin)",
-      "bin_name": "Khu vực kho bán CP01",
-      "bin_details": [],
+      "bin_code": "[Bảo hành] BH-A-01-a (1)",
+      "bin_name": "Kho bán CP01 (11001.01)",
+      "bin_details": [
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 1,
+          "uom": "Cái"
+        }
+      ],
       "on_hand_qty": 0,
       "erp_available_qty": 0,
       "held_qty": 0,
@@ -1247,9 +1256,17 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (2)",
+      "bin_code": "[Bảo hành] BH-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (2)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 1,
+          "uom": "Cái"
+        },
         {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
@@ -1831,9 +1848,17 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (3)",
+      "bin_code": "[Bảo hành] BH-A-01-a (3), [Lưu kho hàng bán mới] LK.01-A-01-a (3)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 3,
+          "uom": "Cái"
+        },
         {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
@@ -2272,7 +2297,7 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (6), [Lưu kho hàng bán mới] LK.01-A-01-a (5)",
+      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (6), [Bảo hành] BH-A-01-a (2), [Lưu kho hàng bán mới] LK.01-A-01-a (5)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
@@ -2281,6 +2306,14 @@ const INITIAL_PRODUCTS = [
           "zone_name": "Trưng bày hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
           "qty": 6,
+          "uom": "Cái"
+        },
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 2,
           "uom": "Cái"
         },
         {
