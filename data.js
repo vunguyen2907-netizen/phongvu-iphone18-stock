@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 14:45:25
+ * Cập nhật lúc: 22/09/2026 14:50:41
  */
 const INITIAL_PRODUCTS = [
   {
@@ -1778,16 +1778,34 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 5,
-      "total_erp_holds": 4,
-      "valid_releasable_count": 5,
+      "total_held_deposits": 6,
+      "total_erp_holds": 5,
+      "valid_releasable_count": 6,
       "excluded_sr264_count": 0,
-      "cp01_deposits_count": 2,
+      "cp01_deposits_count": 3,
       "sr_distribution": {
-        "CP01": 3,
+        "CP01": 4,
         "CP58": 2
       },
       "orders_list": [
+        {
+          "order_code": "26092230378840",
+          "clean_so": "26092230378840",
+          "doc_type": "Đơn hàng",
+          "deposit_date": "12/09/2026",
+          "salesman": "Kinh doanh Phong Vũ",
+          "staff_id": "",
+          "saleman_display": "Kinh doanh Phong Vũ",
+          "sr_ban": "CP01",
+          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
+          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
+          "trang_thai": "Đang giữ tồn ERP",
+          "is_cp01": true,
+          "is_valid_pickup": true,
+          "qty": 1,
+          "erp_link": "https://erp.phongvu.vn/sales/orders/26092230378840",
+          "status": "CAN_SELL"
+        },
         {
           "order_code": "26092230335540-01",
           "clean_so": "26092230335540",
@@ -1887,13 +1905,31 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 6,
-      "erp_available_qty": 1,
-      "held_qty": 5,
-      "total_erp_holds": 4,
+      "erp_available_qty": 0,
+      "held_qty": 6,
+      "total_erp_holds": 5,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 5,
-      "available_qty": 11,
+      "total_deposit_orders": 6,
+      "available_qty": 12,
       "held_orders": [
+        {
+          "order_code": "26092230378840",
+          "clean_so": "26092230378840",
+          "doc_type": "Đơn hàng",
+          "deposit_date": "12/09/2026",
+          "salesman": "Kinh doanh Phong Vũ",
+          "staff_id": "",
+          "saleman_display": "Kinh doanh Phong Vũ",
+          "sr_ban": "CP01",
+          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
+          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
+          "trang_thai": "Đang giữ tồn ERP",
+          "is_cp01": true,
+          "is_valid_pickup": true,
+          "qty": 1,
+          "erp_link": "https://erp.phongvu.vn/sales/orders/26092230378840",
+          "status": "CAN_SELL"
+        },
         {
           "order_code": "26092230335540-01",
           "clean_so": "26092230335540",
