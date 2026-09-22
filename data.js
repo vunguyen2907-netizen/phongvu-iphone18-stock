@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 15:16:59
+ * Cập nhật lúc: 22/09/2026 15:22:16
  */
 const INITIAL_PRODUCTS = [
   {
@@ -399,25 +399,33 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (8)",
+      "bin_code": "[Bảo hành] BH-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (7)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 1,
+          "uom": "Cái"
+        },
         {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
           "zone_name": "Lưu kho hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
-          "qty": 8,
+          "qty": 7,
           "uom": "Cái"
         }
       ],
-      "on_hand_qty": 8,
-      "erp_available_qty": 3,
+      "on_hand_qty": 7,
+      "erp_available_qty": 2,
       "held_qty": 5,
       "total_erp_holds": 5,
       "excluded_sr264_count": 0,
       "total_deposit_orders": 5,
-      "available_qty": 13,
+      "available_qty": 12,
       "held_orders": [
         {
           "order_code": "26091238278660-01",
@@ -694,7 +702,7 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (4)",
+      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3), [Bảo hành] BH-A-01-a (1)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
@@ -702,17 +710,25 @@ const INITIAL_PRODUCTS = [
           "bin_name": "[Trưng bày hàng bán mới] 04-VK6.01-01-d",
           "zone_name": "Trưng bày hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
-          "qty": 4,
+          "qty": 3,
+          "uom": "Cái"
+        },
+        {
+          "bin_code": "BH-A-01-a",
+          "bin_name": "[Bảo hành] BH-A-01-a",
+          "zone_name": "Bảo hành",
+          "product_status": "Hàng bảo hành",
+          "qty": 1,
           "uom": "Cái"
         }
       ],
-      "on_hand_qty": 4,
-      "erp_available_qty": 3,
+      "on_hand_qty": 3,
+      "erp_available_qty": 2,
       "held_qty": 0,
       "total_erp_holds": 1,
       "excluded_sr264_count": 1,
       "total_deposit_orders": 0,
-      "available_qty": 4,
+      "available_qty": 3,
       "held_orders": [
         {
           "order_code": "26091230810900-01",
