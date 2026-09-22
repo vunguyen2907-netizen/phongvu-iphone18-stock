@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 11:19:47
+ * Cập nhật lúc: 22/09/2026 11:25:02
  */
 const INITIAL_PRODUCTS = [
   {
