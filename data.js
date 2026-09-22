@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 15:38:07
+ * Cập nhật lúc: 22/09/2026 15:43:22
  */
 const INITIAL_PRODUCTS = [
   {
@@ -1778,34 +1778,16 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 6,
-      "total_erp_holds": 4,
-      "valid_releasable_count": 6,
+      "total_held_deposits": 4,
+      "total_erp_holds": 3,
+      "valid_releasable_count": 4,
       "excluded_sr264_count": 0,
-      "cp01_deposits_count": 3,
+      "cp01_deposits_count": 2,
       "sr_distribution": {
-        "CP01": 5,
-        "CP58": 1
+        "CP58": 1,
+        "CP01": 3
       },
       "orders_list": [
-        {
-          "order_code": "26092230335540-01",
-          "clean_so": "26092230335540",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "Kinh doanh Phong Vũ",
-          "staff_id": "",
-          "saleman_display": "Kinh doanh Phong Vũ",
-          "sr_ban": "CP01",
-          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
-          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
-          "trang_thai": "Đang giữ tồn ERP",
-          "is_cp01": true,
-          "is_valid_pickup": true,
-          "qty": 2,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26092230335540",
-          "status": "CAN_SELL"
-        },
         {
           "order_code": "26091433918170-01",
           "clean_so": "26091433918170",
@@ -1866,15 +1848,23 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Luân chuyển] LC-A-01-a (3), [Lưu kho hàng bán mới] LK.01-A-01-a (3)",
+      "bin_code": "[Bàn giao] BG-A-01-a (2), [Luân chuyển] LC-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (3)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
+        {
+          "bin_code": "BG-A-01-a",
+          "bin_name": "[Bàn giao] BG-A-01-a",
+          "zone_name": "Bàn giao",
+          "product_status": "Đang vận hành trong kho",
+          "qty": 2,
+          "uom": "Cái"
+        },
         {
           "bin_code": "LC-A-01-a",
           "bin_name": "[Luân chuyển] LC-A-01-a",
           "zone_name": "Luân chuyển",
           "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
+          "qty": 1,
           "uom": "Cái"
         },
         {
@@ -1886,32 +1876,14 @@ const INITIAL_PRODUCTS = [
           "uom": "Cái"
         }
       ],
-      "on_hand_qty": 6,
+      "on_hand_qty": 4,
       "erp_available_qty": 0,
-      "held_qty": 6,
-      "total_erp_holds": 4,
+      "held_qty": 4,
+      "total_erp_holds": 3,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 6,
-      "available_qty": 12,
+      "total_deposit_orders": 4,
+      "available_qty": 8,
       "held_orders": [
-        {
-          "order_code": "26092230335540-01",
-          "clean_so": "26092230335540",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "12/09/2026",
-          "salesman": "Kinh doanh Phong Vũ",
-          "staff_id": "",
-          "saleman_display": "Kinh doanh Phong Vũ",
-          "sr_ban": "CP01",
-          "sr_ban_name": "CP01 - Kho Tổng / Showroom CMT8",
-          "xuat_tai_dau": "Trống (Nhận tại kho/SR)",
-          "trang_thai": "Đang giữ tồn ERP",
-          "is_cp01": true,
-          "is_valid_pickup": true,
-          "qty": 2,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26092230335540",
-          "status": "CAN_SELL"
-        },
         {
           "order_code": "26091433918170-01",
           "clean_so": "26091433918170",
@@ -5013,9 +4985,18 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "11001.01 (Chưa có hàng trong bin)",
-      "bin_name": "Khu vực kho bán CP01",
-      "bin_details": [],
+      "bin_code": "[Trưng bày hàng bán mới] 04-VHH.01-03-b (1)",
+      "bin_name": "Kho bán CP01 (11001.01)",
+      "bin_details": [
+        {
+          "bin_code": "04-VHH.01-03-b",
+          "bin_name": "[Trưng bày hàng bán mới] 04-VHH.01-03-b",
+          "zone_name": "Trưng bày hàng bán mới",
+          "product_status": "Hàng bán mới tại kho",
+          "qty": 1,
+          "uom": "Cái"
+        }
+      ],
       "on_hand_qty": 1,
       "erp_available_qty": 0,
       "held_qty": 1,
