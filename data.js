@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 15:22:16
+ * Cập nhật lúc: 22/09/2026 15:27:30
  */
 const INITIAL_PRODUCTS = [
   {
@@ -399,17 +399,9 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Bảo hành] BH-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (7)",
+      "bin_code": "[Lưu kho hàng bán mới] LK.01-A-01-a (7)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
-        {
-          "bin_code": "BH-A-01-a",
-          "bin_name": "[Bảo hành] BH-A-01-a",
-          "zone_name": "Bảo hành",
-          "product_status": "Hàng bảo hành",
-          "qty": 1,
-          "uom": "Cái"
-        },
         {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
@@ -702,7 +694,7 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3), [Bảo hành] BH-A-01-a (1)",
+      "bin_code": "[Trưng bày hàng bán mới] 04-VK6.01-01-d (3)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
@@ -711,14 +703,6 @@ const INITIAL_PRODUCTS = [
           "zone_name": "Trưng bày hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
           "qty": 3,
-          "uom": "Cái"
-        },
-        {
-          "bin_code": "BH-A-01-a",
-          "bin_name": "[Bảo hành] BH-A-01-a",
-          "zone_name": "Bảo hành",
-          "product_status": "Hàng bảo hành",
-          "qty": 1,
           "uom": "Cái"
         }
       ],
@@ -1794,14 +1778,14 @@ const INITIAL_PRODUCTS = [
     "serials": [],
     "deposit_stats": {
       "filter_rule": "Chỉ tính đơn bỏ trống hoặc note nhận tại SR bán (Loại trừ nhận tại SR 264)",
-      "total_held_deposits": 6,
-      "total_erp_holds": 5,
-      "valid_releasable_count": 6,
+      "total_held_deposits": 5,
+      "total_erp_holds": 4,
+      "valid_releasable_count": 5,
       "excluded_sr264_count": 0,
       "cp01_deposits_count": 3,
       "sr_distribution": {
         "CP01": 4,
-        "CP58": 2
+        "CP58": 1
       },
       "orders_list": [
         {
@@ -1838,24 +1822,6 @@ const INITIAL_PRODUCTS = [
           "is_valid_pickup": true,
           "qty": 2,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26092230335540",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091435214360",
-          "clean_so": "26091435214360",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "14/09/2026",
-          "salesman": "PHẠM TRỌNG DŨNG",
-          "staff_id": "6134",
-          "saleman_display": "PHẠM TRỌNG DŨNG (Mã NV: 6134)",
-          "sr_ban": "CP58",
-          "sr_ban_name": "CP58 - Nguyễn Oanh (Gò Vấp)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091435214360",
           "status": "CAN_SELL"
         },
         {
@@ -1921,12 +1887,12 @@ const INITIAL_PRODUCTS = [
         }
       ],
       "on_hand_qty": 6,
-      "erp_available_qty": 0,
-      "held_qty": 6,
-      "total_erp_holds": 5,
+      "erp_available_qty": 1,
+      "held_qty": 5,
+      "total_erp_holds": 4,
       "excluded_sr264_count": 0,
-      "total_deposit_orders": 6,
-      "available_qty": 12,
+      "total_deposit_orders": 5,
+      "available_qty": 11,
       "held_orders": [
         {
           "order_code": "26092230378840",
@@ -1962,24 +1928,6 @@ const INITIAL_PRODUCTS = [
           "is_valid_pickup": true,
           "qty": 2,
           "erp_link": "https://erp.phongvu.vn/sales/orders/26092230335540",
-          "status": "CAN_SELL"
-        },
-        {
-          "order_code": "26091435214360",
-          "clean_so": "26091435214360",
-          "doc_type": "Đơn hàng",
-          "deposit_date": "14/09/2026",
-          "salesman": "PHẠM TRỌNG DŨNG",
-          "staff_id": "6134",
-          "saleman_display": "PHẠM TRỌNG DŨNG (Mã NV: 6134)",
-          "sr_ban": "CP58",
-          "sr_ban_name": "CP58 - Nguyễn Oanh (Gò Vấp)",
-          "xuat_tai_dau": "Nhận sau ở SR bán",
-          "trang_thai": "Chờ duyệt",
-          "is_cp01": false,
-          "is_valid_pickup": true,
-          "qty": 1,
-          "erp_link": "https://erp.phongvu.vn/sales/orders/26091435214360",
           "status": "CAN_SELL"
         },
         {
