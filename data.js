@@ -1,6 +1,6 @@
 /**
  * iPhone 18 Realtime ERP Inventory Data (Auto-synced)
- * Cập nhật lúc: 22/09/2026 15:43:22
+ * Cập nhật lúc: 22/09/2026 15:48:43
  */
 const INITIAL_PRODUCTS = [
   {
@@ -1848,7 +1848,7 @@ const INITIAL_PRODUCTS = [
       "warehouse_code": "11001.01",
       "warehouse_name": "CP01 - KHO TỔNG MIỀN NAM (11001.01)",
       "branch_code": "CP01",
-      "bin_code": "[Bàn giao] BG-A-01-a (2), [Luân chuyển] LC-A-01-a (1), [Lưu kho hàng bán mới] LK.01-A-01-a (3)",
+      "bin_code": "[Bàn giao] BG-A-01-a (2), [Lưu kho hàng bán mới] LK.01-A-01-a (2), [Soạn hàng] SH-A-05-a (2)",
       "bin_name": "Kho bán CP01 (11001.01)",
       "bin_details": [
         {
@@ -1860,19 +1860,19 @@ const INITIAL_PRODUCTS = [
           "uom": "Cái"
         },
         {
-          "bin_code": "LC-A-01-a",
-          "bin_name": "[Luân chuyển] LC-A-01-a",
-          "zone_name": "Luân chuyển",
-          "product_status": "Hàng bán mới tại kho",
-          "qty": 1,
-          "uom": "Cái"
-        },
-        {
           "bin_code": "LK.01-A-01-a",
           "bin_name": "[Lưu kho hàng bán mới] LK.01-A-01-a",
           "zone_name": "Lưu kho hàng bán mới",
           "product_status": "Hàng bán mới tại kho",
-          "qty": 3,
+          "qty": 2,
+          "uom": "Cái"
+        },
+        {
+          "bin_code": "SH-A-05-a",
+          "bin_name": "[Soạn hàng] SH-A-05-a",
+          "zone_name": "Soạn hàng",
+          "product_status": "Hàng bán mới tại kho",
+          "qty": 2,
           "uom": "Cái"
         }
       ],
